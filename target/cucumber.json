@@ -1,0 +1,93 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-17T15:58:40.466Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2574000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.google.step_definitions.Hooks.setupScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Search an apple",
+        "description": "",
+        "id": "search-functionality;search-an-apple",
+        "after": [
+          {
+            "result": {
+              "duration": 749000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.google.step_definitions.Hooks.teardownScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user in on the homepage",
+            "match": {
+              "location": "com.google.step_definitions.Google.user_in_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2421000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters \"apple\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"apple\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.google.step_definitions.Search_StepDef.user_enters(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user sees \"apple\" in the title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"apple\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.google.step_definitions.Search_StepDef.user_sees_in_the_title(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search functionality",
+    "description": "",
+    "id": "search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/Search.feature",
+    "tags": []
+  }
+]
